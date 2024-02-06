@@ -30,7 +30,7 @@ const getAllUSers = async (): Promise<IUser[]> => {
   return users;
 };
 
-export const userService = {
+export const UserService = {
   createUser,
   loginUser,
   getAllUSers,
