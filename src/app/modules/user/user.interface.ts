@@ -1,9 +1,8 @@
-// user interface
-
 import { Model } from "mongoose";
 import { IUserDonation } from "../../interfaces/IUserDonation";
 
-type IUser = {
+// user interface
+export type IUser = {
   id?: string;
   name?: string;
   email: string;
