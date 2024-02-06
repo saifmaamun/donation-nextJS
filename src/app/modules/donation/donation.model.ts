@@ -32,6 +32,6 @@ export const DonationSchema = new Schema<IDonation, DonationModel>({
 });
 
 export const Donation = model<IDonation, DonationModel>(
-  "Product",
+  "Donation",
   DonationSchema
 );
