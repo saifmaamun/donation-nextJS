@@ -14,7 +14,7 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
 // login user
 const loginUser = async (user: IUser): Promise<IUser> => {
   const loggedUser = await User.findOne({ email: user.email });
-  console.log(loggedUser);
+  // console.log(loggedUser);
   if (!loggedUser) {
     throw new Error("User not found");
   } else if (loggedUser.password !== user.password) {

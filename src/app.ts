@@ -4,6 +4,7 @@ const app = express();
 
 // routes
 import userRouter from "./app/modules/user/user.routes";
+import donationPostRouter from "./app/modules/donation/donation.routes";
 
 app.use(cors());
 // parser
@@ -16,5 +17,8 @@ app.get("/", (req, res) => {
 
 // users route
 app.use("/api/v1/users", userRouter);
+
+// donation posts routes
+app.use("/api/v1/posts", donationPostRouter);
 
 export default app;
