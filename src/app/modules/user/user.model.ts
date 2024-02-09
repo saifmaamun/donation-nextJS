@@ -21,6 +21,8 @@ export const UserSchema = new Schema<IUser, UserModel>(
     },
     role: {
       type: String,
+      enum: ["admin", "user"],
+      default: "user",
     },
     donation: {
       type: Array,

@@ -20,7 +20,7 @@ const createUser = catchAsync(async (req: Request, res: Response) => {
 const loginUser = catchAsync(async (req: Request, res: Response) => {
   const user = req.body;
   const result = await UserService.loginUser(user);
-  sendResponse<IUser>(res, {
+  sendResponse(res, {
     statusCode: 200,
     success: true,
     message: "user logged in successfully",
