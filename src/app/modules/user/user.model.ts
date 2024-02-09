@@ -24,9 +24,6 @@ export const UserSchema = new Schema<IUser, UserModel>(
       enum: ["admin", "user"],
       default: "user",
     },
-    donation: {
-      type: Array,
-    },
   },
   {
     timestamps: true,
