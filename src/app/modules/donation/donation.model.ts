@@ -29,9 +29,9 @@ export const DonationSchema = new Schema<IDonation, DonationModel>({
     type: Number,
     required: true,
   },
-  donation: {
-    type: Array,
-  },
+  // donation: {
+  //   type: Array,
+  // },
 });
 
 export const Donation = model<IDonation, DonationModel>(
