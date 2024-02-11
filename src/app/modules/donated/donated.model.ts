@@ -7,6 +7,15 @@ export const DonatedSchema = new Schema<IDonated, DonatedModel>({
     type: String,
     required: true,
   },
+  title: {
+    type: String,
+    required: true,
+  },
+  amount: {
+    type: Number,
+    required: true,
+  },
+
   email: {
     type: String,
     required: true,
